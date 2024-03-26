@@ -1,0 +1,9 @@
+<form>
+    <label for="ten">Tên:</label>
+    <input type="text" class="form-control" ng-model="inputValue.name">
+    <span ng-show="kiemTraDuLieu.name == true" style="color:red;">Vui lòng nhập tên</span>
+    <label for="gia">Giá:</label>
+    <input type="number" class="form-control" ng-model="inputValue.price">
+    <span ng-show="kiemTraDuLieu.price == true" style="color: red;">Vui lòng nhập giá</span>
+    <button ng-click="onSubmitForm()" class="btn btn-success">Thêm</button>
+</form>
